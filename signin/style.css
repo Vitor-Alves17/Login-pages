@@ -1,0 +1,58 @@
+@import url("/style/reset.css");
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-style: ;
+}
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 49%;
+    border: 1px solid black;
+}
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+.form-container > h2{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 62px;
+}
+img {
+    width: 51%;
+}
+.text-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 22px;
+}
+input {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.form-container {
+    border: 1px solid black;
+    padding: 10px;
+}
+.comum-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.login {
+    border: 1px solid black;
+    background-color: green;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    
+}
