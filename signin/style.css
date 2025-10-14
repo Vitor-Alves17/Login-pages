@@ -1,11 +1,12 @@
 @import url("/style/reset.css");
+@import url(/style/fonts.css);
 main {
     width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    font-style: ;
+    font-style: normal;
 }
 section {
     display: flex;
@@ -13,12 +14,13 @@ section {
     align-items: center;
     justify-content: center;
     width: 49%;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 h1 {
     font-size: 32px;
     font-weight: 500;
-    margin-bottom: 22px;
+    margin-bottom: 5px;
+    color: var(--black);
 }
 .form-container > h2{
     font-size: 16px;
@@ -34,25 +36,75 @@ img {
     justify-content: space-between;
     gap: 22px;
 }
-input {
-    border: 1px solid black;
-    border-radius: 15px;
+input[type="password"], input[type="email"] {
+    border: 1px solid var(--gray);
+    border-radius: 10px;
 }
-.form-container {
+/* .form-container {
     border: 1px solid black;
     padding: 10px;
-}
+} */
 .comum-form {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
 }
 .login {
-    border: 1px solid black;
-    background-color: green;
+    border: 0.5px solid var(--green);
+    background-color: var(--green);
+    color: white;
+    width: 100%;
+    padding: 7px;
+    border-radius: 10px;
+    margin-top: 20px;
+    font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 fieldset {
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     
+}
+.button-login{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.remember{
+    border-color: var(--black);
+    display: flex;
+    flex-direction: row;
+    width: 35%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+}
+#password {
+    padding: 7px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+#email {
+    padding: 7px;
+    font-size: 14px;
+}
+#email::placeholder{
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 10px;
+}
+#password::placeholder{
+    color: var(--gray);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.forgot{
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    color: var(--blackblue);
 }
