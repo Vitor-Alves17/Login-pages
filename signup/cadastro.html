@@ -9,8 +9,54 @@
 <body>
     <main>
         <section>
-            <img src="" alt="">
+            <div class="form-conteiner">
+                <h1>Get Start Now!</h1>
+            <form action="" method="post">
+                <fieldset class="comum-form">
+                    <label for="name">Name</label>
+                    <input placeholder="Enter your name" type="name" name="name" id="name">
+                </fieldset>
+                <fieldset class="comum-form">
+                    <label for="email">Email address</label>
+                    <input placeholder="Enter your email" type="email" name="email" id="email">
+                </fieldset>
+                <fieldset class="comum-form">
+                    <div class="text-wrapper">
+                        <label for="password">Password</label>
+                        <a class = "forgot" href="">Forgot password</a>
+                    </div>
+                    <input placeholder="Name" type="password" name="password" id="password">
+                </fieldset>
+                <fieldset class="remember">
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember for 30 days</label>
+                </fieldset>
+                <div class="button-login">
+                    <button type="submit" class="login">Login</button>
+                </div>
+            </form>
+            <div class="divider">
+                <div class="line"></div>
+                <p>or</p>
+                <div class="line"></div>
+            </div>
+            <div class="sso-conteiner">
+                <button>
+                    <img src="../assets/icons/google-icon.svg" alt="">
+                    <p>Sign in with Google</p>
+                </button>
+                <button>
+                    <img src="../assets/icons/apple-logo.svg" alt="">
+                    <p>Sign in with Apple</p>
+                </button>
+            </div>
+            <div class="signin-container">
+                <p>Don't have a account?</p>
+                <a href="../signin/login.html">Sign up</a>
+            </div>
+            </div>
         </section>
+        <img src="../assets/images/planatinha.png" alt="">
     </main>
 </body>
 </html>

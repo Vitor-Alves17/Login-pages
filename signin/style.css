@@ -1,5 +1,6 @@
 @import url("/style/reset.css");
 @import url(/style/fonts.css);
+
 main {
     width: 100vw;
     height: 100vh;
@@ -28,6 +29,7 @@ h1 {
     margin-bottom: 62px;
 }
 img {
+    object-fit: cover;
     width: 51%;
 }
 .text-wrapper {
@@ -40,10 +42,9 @@ input[type="password"], input[type="email"] {
     border: 1px solid var(--gray);
     border-radius: 10px;
 }
-/* .form-container {
-    border: 1px solid black;
+.form-container {
     padding: 10px;
-} */
+}
 .comum-form {
     display: flex;
     flex-direction: column;
@@ -107,4 +108,71 @@ fieldset {
     flex-direction: column;
     justify-content: end;
     color: var(--blackblue);
+}
+.divider{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5px;
+    margin-top: 34px;
+    margin-bottom: 20px;
+}
+.divider > p{
+    font-size: 9px;
+    color: var(--black);
+    font-weight: 500;
+    margin: 4.5px, 0;
+}
+.line{
+    border-color: 0.5, solid var(--bordergray);
+    background-color: var(--bordergray);
+    width: 45%;
+    height: 2px;
+}
+.sso-conteiner {
+    margin-top: 89px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+.sso-conteiner img {
+    width: 24px;
+    height: 24px;
+}
+
+.sso-conteiner > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px, 24px;
+    border: 1px, solid, var(--gray);
+    border-radius: 10px;
+    gap: 10px;
+    width: 100%;
+    height: 32px;
+
+     font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12px;
+}
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+    margin-top: 22px;
+    gap: 10px;
+
+    p{
+        color: var(--black);
+    }
+    a {
+        color: var(--blue);
+    }
 }
